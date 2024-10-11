@@ -1,0 +1,278 @@
+.gradient-background {
+	background: linear-gradient(300deg, #000, #52077e, #131842);
+	background-size: 180% 180%;
+	animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #1c1d1c;
+}
+
+nav {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contents {
+	margin: 18px;
+	height: fit-content;
+}
+
+.nav-text {
+	display: inline-block;
+	margin-left: 15px;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	opacity: 0.8;
+}
+
+.nav-text:hover {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+h1 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+	font-family: sans-serif;
+}
+
+.name {
+	color: palevioletred;
+}
+
+.butterfly {
+	filter: drop-shadow(1px 1px 20px white);
+}
+
+.logo {
+	height: 4rem;
+	margin-right: 20px;
+}
+
+.head {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+img[alt="ronak image"] {
+	margin: 60px;
+	margin-left: 10px;
+	height: 400px;
+	border-radius: 30px;
+	float: left;
+}
+
+p {
+	font-family: sans-serif;
+	color: white;
+	font-size: 25px;
+	width: 90%;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+.hello {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	font-size: 45px;
+	font-weight: 600;
+	color: pink;
+}
+
+#my-projects {
+	margin-top: 200px;
+	clear: left;
+	background-color: #313131;
+}
+
+.cards-container {
+	padding-top: 30px;
+	width: 100%;
+}
+
+.card {
+	display: inline-block;
+	width: 300px;
+	margin: 10px;
+	margin-bottom: 30px;
+	border-radius: 25px;
+}
+
+.card > img {
+	height: 200px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.card-text {
+	font-size: 15px;
+	height: 90px;
+	width: 200px;
+	text-align: left;
+}
+
+.test {
+	padding: 50px;
+	padding-left: 0px;
+}
+
+.image-header {
+	height: 100px;
+	border-radius: 50%;
+}
+
+.p-5 {
+	position: relative;
+}
+.lead {
+	color: black;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#contact-me > div > h1 {
+	margin-top: 50px;
+}
+
+#contact-me > div > p {
+	margin: 0;
+	text-align: left;
+	padding: 0;
+	font-size: 20px;
+}
+
+#contact-me > div > button {
+	margin-top: 20px;
+	background-color: rgb(116, 7, 206);
+	height: 50px;
+	font-size: 20px;
+}
+
+#contact-me > div > button > a {
+	text-decoration: none;
+	color: white;
+}
+p > img {
+	height: 25px;
+}
+
+.col-md-4 > img {
+	height: 80px;
+}
+
+.col-md-4 > p {
+	font-family: serif;
+	margin-left: 10px;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+li > a > img {
+	margin: 10px;
+	height: 35px;
+}
+
+li > a > img:hover {
+	color: white;
+	transform: translateY(-5px);
+	transition: 0.3s ease;
+}
+
+.res-nav {
+	position: fixed;
+	display: none;
+	flex-direction: column;
+	width: 250px;
+	height: 100vh;
+	z-index: 999;
+	backdrop-filter: blur(10px);
+	top: 0;
+	right: 0;
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+	justify-content: flex-start;
+	align-items: flex-start;
+	animation: fadeIn ease 0.3s;
+}
+
+.res-nav > nav > div > a {
+	margin: 10px;
+	width: 100%;
+}
+
+button {
+	background-color: inherit;
+	border: none;
+	display: none;
+}
+
+.res-nav-text {
+	display: inline-block;
+	margin-left: 15px;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	opacity: 0.8;
+}
+
+.res-nav-text:hover {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+svg {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 680px) {
+	.cards-container {
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.card-body {
+		text-align: left;
+	}
+
+	.nav-text {
+		display: none;
+	}
+
+	.contents > button {
+		display: contents;
+	}
+}
